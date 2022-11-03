@@ -1,22 +1,33 @@
 package algo.expert.bt.hard;
 
-import algo.expert.bt.medium.InvertBT;
+/**
+ * Given a Binary Tree return Max Path Sum
+ * A path Sum is the sum of values of a path.
+ * Ex:          1
+ *            /   \
+ *           2     3
+ *         /  \   /  \
+ *        4   5  6    7
+ *   Output: 18= 5+2+1+3+7
+ *   Note: node value can be negative
+ */
 
 public class MaxPathSum {
     public static int maxPathSum(BinaryTree tree) {
         // Write your code here.
         return getNodePathInfo(tree).maxSumPath;
     }
+    //O(n) time, O(log(n)) space
     public static NodeInfo getNodePathInfo(BinaryTree node){
         if(node==null){
-            return new NodeInfo(0,0);
+            return new NodeInfo(0,Integer.MIN_VALUE);
         }
         NodeInfo leftInfo = getNodePathInfo(node.left);
         NodeInfo rightInfo = getNodePathInfo(node.right);
 
-        int maxSumBranch = Math.max(leftInfo.maxSumBranch, rightInfo.maxSumBranch)+node.value;
-
-        int maxSumAsRoot =leftInfo.maxSumBranch+ node.value+ rightInfo.maxSumBranch;
+        int maxSumBranch = Math.max(leftInfo.maxSumBranch, rightInfo.maxSumBranch);
+        maxSumBranch = Math.max(maxSumBranch+node.value, node.value );
+        int maxSumAsRoot =Math.max(leftInfo.maxSumBranch+ node.value+ rightInfo.maxSumBranch, maxSumBranch);
         int maxPath = Math.max(maxSumAsRoot, Math.max(leftInfo.maxSumPath,rightInfo.maxSumPath));
         return new NodeInfo(maxSumBranch,maxPath);
     }
