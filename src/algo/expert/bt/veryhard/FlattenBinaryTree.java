@@ -4,7 +4,7 @@ public class FlattenBinaryTree {
 
     public static BinaryTree flattenBinaryTree(BinaryTree root) {
         // Write your code here.
-        return root;
+        return null;
     }
 
     // This is the class of the input root. Do not edit it.
