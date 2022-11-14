@@ -1,4 +1,4 @@
-package algo.expert.bt.medium;
+package algo.expert.binarytree.medium;
 
 public class HeightBalancedTree {
 

@@ -1,4 +1,4 @@
-package algo.expert.bt.easy;
+package algo.expert.binarytree.easy;
 
 import java.util.ArrayList;
 import java.util.Arrays;

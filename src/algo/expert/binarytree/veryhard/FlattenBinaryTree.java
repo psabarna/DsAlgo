@@ -1,4 +1,4 @@
-package algo.expert.bt.veryhard;
+package algo.expert.binarytree.veryhard;
 
 public class FlattenBinaryTree {
 

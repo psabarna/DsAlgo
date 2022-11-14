@@ -1,4 +1,4 @@
-package algo.expert.bt.hard;
+package algo.expert.binarytree.hard;
 
 import java.util.*;
 

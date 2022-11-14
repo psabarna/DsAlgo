@@ -1,4 +1,12 @@
-package algo.expert.bt.veryhard;
+package algo.expert.binarytree.veryhard;
+
+import java.util.ArrayDeque;
+import java.util.HashSet;
+import java.util.Queue;
+import java.util.Set;
+
+import java.util.Stack;
+import java.util.function.Function;
 
 import java.util.Stack;
 
@@ -83,4 +91,19 @@ public class IterativeInOrderTraversal {
         root.right.right = new BinaryTree(7, root.right);
         iterativeInOrderTraversal1(root);
     }
+
+    /*public static void main(String[] args) {
+        BinaryTree root = new BinaryTree(5, null);
+        root.left= new BinaryTree(3, root);
+        root.right= new BinaryTree(7, root);
+
+        root.left.left= new BinaryTree(1, root.left);
+        root.left.left.right= new BinaryTree(2, root.left.left);
+        root.left.right= new BinaryTree(4, root.left);
+
+        root.right.left = new BinaryTree(6, root.right);
+        root.right.right = new BinaryTree(8, root.right);
+
+        iterativeInOrderTraversal(root, null);
+    }*/
 }

@@ -1,4 +1,4 @@
-package algo.expert.bt.hard;
+package algo.expert.binarytree.hard;
 
 /**
  * Given a Binary Tree return Max Path Sum
