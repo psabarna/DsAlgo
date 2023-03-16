@@ -77,8 +77,8 @@ public class ThreeNumberSum {
     }
 
     public static void main(String[] args){
-        int[] arr = {12, 3, 1, 2, -6, 5, -8, 6};
-        List<int[]> combs = findCombinations3(arr, 0);
+        int[] arr = {-3,0,1,2,-1,1,-2};//{12, 3, 1, 2, -6, 5, -8, 6};
+        List<int[]> combs = findCombinations1(arr, 0);
         for(int[] comb: combs){
             System.out.println(comb[0]+" "+comb[1]+ " "+comb[2]);
         }
