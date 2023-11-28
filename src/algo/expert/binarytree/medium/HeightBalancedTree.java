@@ -1,5 +1,8 @@
 package algo.expert.binarytree.medium;
-
+/*
+Given a tree determine if it is height balanced
+https://leetcode.com/problems/balanced-binary-tree/
+ */
 public class HeightBalancedTree {
 
     static class BinaryTree {

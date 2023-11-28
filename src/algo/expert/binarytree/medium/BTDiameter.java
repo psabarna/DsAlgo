@@ -4,6 +4,8 @@ package algo.expert.binarytree.medium;
  * Given a Binary Tree, find the diameter of Tree
  * The diameter is defined by the longest path, even if it does not pass through the root
  * Path is a collection of connected nodes, length of path is the edges between them.
+ *
+ * https://leetcode.com/problems/diameter-of-binary-tree/description/
  */
 public class BTDiameter {
 

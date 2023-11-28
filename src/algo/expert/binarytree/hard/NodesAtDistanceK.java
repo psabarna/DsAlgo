@@ -2,6 +2,10 @@ package algo.expert.binarytree.hard;
 
 import java.util.*;
 
+/**
+ * Given a BinaryTree and a TargetNode get values of all nodes at distance K
+ * https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/description/
+ */
 public class NodesAtDistanceK {
     static class BinaryTree {
         public int value;

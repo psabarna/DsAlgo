@@ -12,9 +12,14 @@ package algo.expert.binarytree.medium;
  *     3       2
  *   7  6   5    4
  *
+ *
+ * https://leetcode.com/problems/invert-binary-tree/description/
  */
 public class InvertBT {
-
+/*
+    Invert a Binary Tree
+    https://leetcode.com/problems/invert-binary-tree/description/
+ */
     public static void invertBinaryTree(BinaryTree tree) {
         // Write your code here.
         if(tree==null){

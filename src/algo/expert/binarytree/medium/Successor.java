@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Given a Binary Tree with each node having reference to its Parent, find the inorder successor of any given node
+ * Given a Binary Tree with each node having reference to its Parent,
+ * find the inorder successor of any given node
  *
  */
 public class Successor {
